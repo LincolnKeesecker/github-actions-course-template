@@ -9,6 +9,7 @@
   },
   "scripts": {
     "build": "npx webpack --config ./src/webpack.config.js --mode production",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider vuepress dev documentation",
     "dev": "npx webpack --config ./src/webpack.config.js --mode development --watch",
     "test": "npx standard && npx jest"
   },
